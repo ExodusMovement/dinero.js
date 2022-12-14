@@ -1,5 +1,4 @@
-import BN from 'bn.js';
-
+import BN from '../../bn';
 import { integerDivide } from '../integerDivide';
 
 describe('integerDivide', () => {

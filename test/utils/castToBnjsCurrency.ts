@@ -1,6 +1,10 @@
-import BN from 'bn.js';
+import * as _BN from 'bn.js';
 
 import type { Currency } from 'dinero.js';
+
+// workaround for rollup/typescript not agreeing on BN default export types
+// eslint-disable-next-line import/namespace
+const { BN } = _BN;
 
 export function castToBnjsCurrency(currency: Currency<number>): Currency<BN> {
   return {

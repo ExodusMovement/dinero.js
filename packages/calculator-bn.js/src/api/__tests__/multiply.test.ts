@@ -1,5 +1,4 @@
-import BN from 'bn.js';
-
+import BN from '../../bn';
 import { multiply } from '../multiply';
 
 describe('multiply', () => {

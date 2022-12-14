@@ -1,5 +1,4 @@
-import BN from 'bn.js';
-
+import BN from '../../bn';
 import { decrement } from '../decrement';
 
 describe('decrement', () => {

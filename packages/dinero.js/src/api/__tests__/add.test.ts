@@ -1,6 +1,6 @@
 import { EUR, USD, MGA, MRU } from '@dinero.js/currencies';
 import Big from 'big.js';
-import BN from 'bn.js';
+import * as _BN from 'bn.js';
 import {
   castToBigintCurrency,
   castToBigjsCurrency,
@@ -12,6 +12,10 @@ import {
 } from 'test-utils';
 
 import { add, toSnapshot } from '..';
+
+// workaround for rollup/typescript not agreeing on BN default export types
+// eslint-disable-next-line import/namespace
+const { BN } = _BN;
 
 describe('add', () => {
   describe('number', () => {

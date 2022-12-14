@@ -1,6 +1,6 @@
 import { ComparisonOperator } from '@dinero.js/core';
-import BN from 'bn.js';
 
+import BN from '../../bn';
 import { compare } from '../compare';
 
 describe('compare', () => {
